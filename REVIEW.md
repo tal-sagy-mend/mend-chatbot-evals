@@ -13,7 +13,7 @@ Update `golden_set.json` after each answer, then run `python3 import_dataset.py 
 | D1-GS-11 | expected_answer (add user) | ✅ confirmed via docs |
 | D1-GS-12 | expected_answer (SAST triage) | ✅ confirmed via docs |
 | N-GS-03 | link_path (critical findings) | ✅ set to `applications/findings` (no unified org-level view) |
-| N-GS-04 | link_path (value dashboard) | ⏳ set to `dashboard/value` — UNVERIFIED, confirm in platform |
+| N-GS-04 | link_path (value dashboard) | ✅ confirmed in platform |
 | N-GS-05 | link_path (high-severity findings) | ✅ set to `applications/findings` (no unified org-level view) |
 | N-GS-06 | link_path (open findings) | ✅ set to `applications/findings` (no unified org-level view) |
 | E-GS-01 | must_not_include (delete project) | ✅ trimmed to `["DELETE", "/api/v3", "curl"]` |
@@ -76,10 +76,10 @@ Provide the path (everything after the domain) that the bot should generate.
 
 ---
 
-### N-GS-04 — Value dashboard *(new case, never tested)*
+### N-GS-04 — Value dashboard
 **Question:** "Take me to the value dashboard"
 **Expected behavior:** UI agent → Value Dashboard
-**link_path set:** `dashboard/value` *(tentative — verify the exact path in the platform if test fails)*
+**link_path set:** `dashboard/value` ✅ confirmed
 
 ---
 
